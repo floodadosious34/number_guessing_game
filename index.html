@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="main-content">
+        <h1 id="title">Higher or Lower</h1>
+        <h2 id="comment">Please guess a number 1-100</h2>
+
+        <div id="form">
+            <input type="text" placeholder="guess number here" id="numberInput"><br>
+            <input type="button" onclick="checkNumber()"id="button" value="Submit Guess">
+        </div>
+    </div>
+    <div id="winner-block">
+        <h1>YOU WIN!!</h1>
+        <input type="button" name="" id="start" onclick="startGame()" value="Play Again">
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
